@@ -1,6 +1,4 @@
-@'
 __pycache__/
 *.pyc
 outputs/*.csv
 .vscode/
-'@ | Set-Content -Encoding ascii .\.gitignore
