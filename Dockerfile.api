@@ -1,0 +1,5 @@
+FROM python:3.9-slim
+WORKDIR /opt/airflow
+RUN pip install --no-cache-dir flask flask-cors psycopg2-binary
+COPY exchange.py /opt/airflow/exchange.py
+CMD ["python", "exchange.py"]
